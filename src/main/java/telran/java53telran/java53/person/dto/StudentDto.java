@@ -1,4 +1,4 @@
-package telran.java53telran.java53.student.dto;
+package telran.java53telran.java53.person.dto;
 
 import java.util.List;
 
@@ -8,16 +8,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
-public class StudentDto {
-	Integer id;
-	String name;
-	String surname;
-	String phone;
-	String email;
-	String location; //place; enum?
+public class StudentDto extends PersonDto{
 	String course; // enum?
 	String status;
-	List<CommentDto> comments;
 	List<String> groups;
 	List<ReminderDto> reminders; //reminderDto?
 	List<String> activityLog;
